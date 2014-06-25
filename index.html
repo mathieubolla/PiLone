@@ -85,7 +85,7 @@
 
 				var req = new XMLHttpRequest();
 				newColor = decimalToHex(document.getElementById("red").value, 2) + decimalToHex(document.getElementById("green").value, 2) + decimalToHex(document.getElementById("blue").value, 2);
-				url = "/" + pilone+"/" + led + "/" + newColor.toUpperCase();
+				url = "/" + pilone+"/" + led + "/" + newColor.toUpperCase() + "/000000";
 
 				req.open("GET", url, true);
 				req.send(null);

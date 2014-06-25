@@ -6,68 +6,60 @@
 import serial
 import time
 import sys, getopt
-from bottle import route, run, template, static_file
-
-def printColor(serial, pilone, led, color):
-	serial.write("{0}{1}{2}\n".format(pilone, led, color))
-
-ser = None
+from bottle import route, run, static_file
+import strand.Strand
 
 @route('/')
 def index():
-	return static_file('index.html', sys.path[0], mimetype='text/html')
+    return static_file('index.html', sys.path[0], mimetype='text/html')
 
-@route('/<pilone>/<led>/<color>')
-def setOne(pilone, led, color):
-	printColor(ser, pilone, led, color)
-	return template('<b>Coucou, {{pilone}}, {{led}}, {{color}}', pilone=pilone, led=led, color=color)
+@route('/<line>/<led>/<color1>/<color2>')
+def set_one(line, led, color1, color2):
+    ser.print_color(line, led, color1, color2)
+    return {'line': line, 'led': led, 'color1': color1, 'color2': color2}
 
-def lightShow(serial):
-	count = 0
-	while True:
-		for pilone in range(0, 2):
-			for led in range(0, 8):
-				printColor(serial, pilone, led, "FFFFFF")
-				time.sleep(0.1)
-				printColor(serial, pilone, led, "000000")
-		count += 1
-		if count >= 2:
-			break
+def light_show(serial_line):
+    count = 0
+    while True:
+        for pilone in range(0, 2):
+            for led in range(0, 8):
+                serial_line.print_color(pilone, led, "FFFFFF", "FFFFFF")
+                time.sleep(0.1)
+                serial_line.print_color(pilone, led, "000000", "000000")
+        count += 1
+        if count >= 2:
+            break
 
 def main(argv):
-	global ser
-	portNumber = ''
-	bindToHost = 'localhost'
-	serialPort = ''
+    global ser
+    portNumber = ''
+    bindToHost = 'localhost'
+    serialPort = ''
 
-	try:
-		opts, args = getopt.getopt(argv,"hp:b:s:",["port=","bind=","serial="])
-	except getopt.GetoptError:
-		print 'test.py -p <portNumber> -b <bindToHost> -s <serialPort>'
-		sys.exit(2)
+    try:
+        opts, args = getopt.getopt(argv, "hp:b:s:", ["port=", "bind=", "serial="])
+    except getopt.GetoptError:
+        print 'test.py -p <portNumber> -b <bindToHost> -s <serialPort>'
+        sys.exit(2)
 
-	for opt, arg in opts:
-		if opt == '-h':
-			print 'test.py -i <inputfile> -o <outputfile>'
-			sys.exit()
-		elif opt in ("-p", "--port"):
-			portNumber = arg
-		elif opt in ("-b", "--bind"):
-			bindToHost = arg
-		elif opt in ("-s", "--serial"):
-			serialPort = arg
-	
-	print 'portNumber is ', portNumber
-	print 'bindToHost is ', bindToHost
-	print 'serialPort is ', serialPort
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'test.py -i <inputfile> -o <outputfile>'
+            sys.exit()
+        elif opt in ("-p", "--port"):
+            portNumber = arg
+        elif opt in ("-b", "--bind"):
+            bindToHost = arg
+        elif opt in ("-s", "--serial"):
+            serialPort = arg
 
-	ser = serial.Serial(serialPort, 57600, timeout=1)
+    ser = strand.Strand(serial.Serial(serialPort, 57600, timeout=1))
 
-	time.sleep(1.5)
-	lightShow(ser)
+    time.sleep(2)
+    light_show(ser)
 
-	run(host=bindToHost, port=portNumber)
-	ser.close()
+    run(host=bindToHost, port=portNumber)
+    ser.close()
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
+    main(sys.argv[1:])
