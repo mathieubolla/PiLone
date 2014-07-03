@@ -75,10 +75,14 @@ def main(args):
     import serial
     import Queue
 
-    strand = strand.Strand(serial.Serial('/dev/tty.usbserial-A601EQIH', 57600, timeout=1))
+    strand = strand.Strand(serial.Serial('/dev/ttyAMA0', 57600, timeout=1))
     tasks = Queue.PriorityQueue()
-    planning = Planning('http://localhost:8080/')
+    planning = Planning('http://pilone/')
     tasks.put((planning.schedule(), planning))
+
+    for i in range(0, 1):
+        for j in range(0, 7):
+            strand.print_color(i, j, "000000", "000000")
 
     while True:
         scheduled, task = tasks.get()
