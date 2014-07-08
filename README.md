@@ -36,13 +36,20 @@ Requirements
 Hardware parts
 --------------
 
-- 1x Raspberry Pi model B rev. 2
+- 1x Raspberry Pi model B rev. 2 ([SparkFun](https://www.sparkfun.com/products/11546))
 - 1x SD-Card (any size will do, as long as your Linux fits in. >4Gb recommended)
-- 1x SparkFun Arduino Pro Mini 5v 16MHz
-- 3x Adafruit Technology High Density NeoPixel Sticks (or less, at least one) (or any other WS-2812 controlled 5050 RGB LED strip or - stick)
+- 1x SparkFun Arduino Pro Mini 5v 16MHz ([SparkFun](https://www.sparkfun.com/products/11113))
+- 3x Adafruit Technology High Density NeoPixel Sticks (or less, at least one) (or any other WS-2812 controlled 5050 RGB LED strip or - stick) ([SparkFun](https://www.sparkfun.com/products/12661))
 - 1x custom made PCB (you may have the one [here](./hardware/PiLone‰20rev‰20C.fzz) made at Fritzing Fab, for instance, or build it - yourself if you have time, patience, skills, and something to print, cut, drill small, two-sided PCBs)
-- 1x USB cable type-A to micro type-B
-- 1x FTDI-to-USB converter (SparkFun's works perfectly, any clone will do)
+- 1x 2x13, 0.1' spaced, shrouded header ([SparkFun](https://www.sparkfun.com/products/11490)) or 2x13, 0.1' spaced, female header ([SparkFun](https://www.sparkfun.com/products/11765))
+- 1x USB cable type-A to micro type-B as short as possible (30cm will do) ([SparkFun](https://www.sparkfun.com/products/10215))
+- 1x FTDI-to-USB converter (SparkFun's works perfectly, any clone will do) ([SparkFun](https://www.sparkfun.com/products/9716) or get a friend to program your Arduino for you)
+- 1x 5V 2A 3.5mm power supply ([SparkFun](https://www.sparkfun.com/products/12889))
+- 1x 3.5mm power jack socket ([SparkFun](https://www.sparkfun.com/products/119))
+- 1x straight USB type-A female connector
+- 3x 4-pin, 0.1' spaced, male pins ([SparkFun](https://www.sparkfun.com/products/116))
+- 3x 4-pin, 0.1' spaced, female-to-wire cables ([SparkFun](https://www.sparkfun.com/products/10364))
+- Some soldering material and tooling
 
 Total expected bill: under 100€ including taxes and customs, depending on shipping costs (group your packages!)
 
