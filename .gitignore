@@ -1,2 +1,4 @@
 **/*.pyc
 .idea/**
+AutoSave_**
+.DS_Store
