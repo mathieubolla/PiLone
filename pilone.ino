@@ -1,3 +1,7 @@
+// author 'Mathieu Bolla'
+// copyright 'Copyright 2014, Mathieu Bolla'
+// licence 'GPL V3.0'
+
 #include <Adafruit_NeoPixel.h>
 
 Adafruit_NeoPixel strips[] = {Adafruit_NeoPixel(8, 2, NEO_GRB + NEO_KHZ800), Adafruit_NeoPixel(8, 3, NEO_GRB + NEO_KHZ800)};
