@@ -3,9 +3,9 @@ PiLone
 
 PiLone is OpenSourceHardWare that allows quietly displaying various quantitative and/or time based data in the living room
 
-[![OpenSource HardWare logo](./docs/img/oshw-logo-200-px.png)](http://www.oshwa.org)
-[![Raspberry Pi Logo](./docs/img/Raspi_logo-200x200.png)](http://www.raspberrypi.org/)
-[![Arduino Community Logo](./docs/img/arduino-community-200x200.png)](http://www.arduino.cc)
+[![OpenSource HardWare logo](./docs/img/oshw-logo-x150-px.png)](http://www.oshwa.org)
+[![Raspberry Pi Logo](./docs/img/Raspi_logo-x150.png)](http://www.raspberrypi.org/)
+[![Arduino Community Logo](./docs/img/arduino-community-x150.png)](http://www.arduino.cc)
 
 Raspberry Pi is a trademark of the Raspberry Pi Foundation
 Arduino Community is a trademark of Arduino SA
