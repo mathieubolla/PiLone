@@ -74,6 +74,8 @@ TODO
 
 Comming next are some instructions on how to assemble the thing (have a look at the provided breadboard view to get a glimpse)
 
+![Breadboard view](./hardware/breadboard.png)
+
 Then, some more on how to run it
 
 Finally, something on the software architecture and what could be done with it really easily
