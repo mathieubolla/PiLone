@@ -28,6 +28,8 @@ The two most important parts are:
 - Some software to gather data and push it to pixels
 - A custom PCB to hold the parts together
 
+![The custom PiLone PCB](./hardware/pcb.png)
+
 Why?
 ====
 
