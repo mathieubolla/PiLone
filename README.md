@@ -61,3 +61,12 @@ Software parts
 - PySerial (install with `pip install pyserial`)
 - [optional] BottlePy (intall with `pip install bottle`) (will work without Bottle Py if you do not need test.py to play with LED colors - by hand)
 - UART console disabled, reconfigured as serial port
+
+TODO
+====
+
+Comming next are some instructions on how to assemble the thing (have a look at the provided breadboard view to get a glimpse)
+
+Then, some more on how to run it
+
+Finally, something on the software architecture and what could be done with it really easily
