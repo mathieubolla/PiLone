@@ -36,21 +36,21 @@ Requirements
 Hardware parts
 --------------
 
-1x Raspberry Pi model B rev. 2
-1x SD-Card (any size will do, as long as your Linux fits in. >4Gb recommended)
-1x SparkFun Arduino Pro Mini 5v 16MHz
-3x Adafruit Technology High Density NeoPixel Sticks (or less, at least one) (or any other WS-2812 controlled 5050 RGB LED strip or stick)
-1x custom made PCB (you may have the one [here](./hardware/PiLone‰20rev‰20C.fzz) made at Fritzing Fab, for instance, or build it yourself if you have time, patience, skills, and something to print, cut, drill small, two-sided PCBs)
-1x USB cable type-A to micro type-B
-1x FTDI-to-USB converter (SparkFun's works perfectly, any clone will do)
+- 1x Raspberry Pi model B rev. 2
+- 1x SD-Card (any size will do, as long as your Linux fits in. >4Gb recommended)
+- 1x SparkFun Arduino Pro Mini 5v 16MHz
+- 3x Adafruit Technology High Density NeoPixel Sticks (or less, at least one) (or any other WS-2812 controlled 5050 RGB LED strip or - stick)
+- 1x custom made PCB (you may have the one [here](./hardware/PiLone‰20rev‰20C.fzz) made at Fritzing Fab, for instance, or build it - yourself if you have time, patience, skills, and something to print, cut, drill small, two-sided PCBs)
+- 1x USB cable type-A to micro type-B
+- 1x FTDI-to-USB converter (SparkFun's works perfectly, any clone will do)
 
 Total expected bill: under 100€ including taxes and customs, depending on shipping costs (group your packages!)
 
 Software parts
 --------------
 
-Linux installed on the SD-Card (any standard distribution will do, tested on Raspbian)
-Python 2.7.x (most probably already installed)
-PySerial (install with `pip install pyserial`)
-[optional] BottlePy (intall with `pip install bottle`) (will work without Bottle Py if you do not need test.py to play with LED colors by hand)
-UART console disabled, reconfigured as serial port
+- Linux installed on the SD-Card (any standard distribution will do, tested on Raspbian)
+- Python 2.7.x (most probably already installed)
+- PySerial (install with `pip install pyserial`)
+- [optional] BottlePy (intall with `pip install bottle`) (will work without Bottle Py if you do not need test.py to play with LED colors - by hand)
+- UART console disabled, reconfigured as serial port
