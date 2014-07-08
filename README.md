@@ -3,6 +3,11 @@ PiLone
 
 PiLone is OpenSourceHardWare that allows quietly displaying various quantitative and/or time based data in the living room
 
+BEWARE: This is currently a barely functionnal proto
+BEWARE BEWARE: The provided PCB hasn't been fabed currently. Do not mass order one, it may not even work...
+
+DISCLAIMER: The provided software and attached hardware designs are provided as-is, with no waranty at all. It may catch fire, it may destroy components, it may not function as advertised, it hasn't been certified for anything (No CE markings, no FCC markings...). Take extreme care when using either software or hardware designs and make sure you fully understand the software and hardware before doing anything with it. You've been warned.
+
 [![OpenSource HardWare logo](./docs/img/oshw-logo-x150-px.png)](http://www.oshwa.org)
 [![Raspberry Pi Logo](./docs/img/Raspi_logo-x150.png)](http://www.raspberrypi.org/)
 [![Arduino Community Logo](./docs/img/arduino-community-x150.png)](http://www.arduino.cc)
