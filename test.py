@@ -1,5 +1,8 @@
 # -*- coding: utf8 -*-
 
+# runs a small webserver on specified port that allows picking a color, and applying to a diode
+# open http://[bind]:[port]/ to access control web page
+# do not forget to specify serial port for your Raspberry Pi at startup
 # uses http://pyserial.sourceforge.net/shortintro.html "pip install pyserial"
 # uses http://bottlepy.org/docs/dev/index.html "pip install bottle"
 
