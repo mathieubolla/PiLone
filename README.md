@@ -6,7 +6,6 @@ PiLone is OpenSourceHardWare that allows quietly displaying various quantitative
 [![OpenSource HardWare logo](./oshw-logo-200-px.png)](http://www.oshwa.org)
 [![Raspberry Pi Logo](./Raspi_logo-200x200.png)](http://www.raspberrypi.org/)
 
-
 Raspberry Pi is a trademark of the Raspberry Pi Foundation
 
 Licence
