@@ -8,6 +8,7 @@ PiLone is OpenSourceHardWare that allows quietly displaying various quantitative
 [![Arduino Community Logo](./docs/img/arduino-community-x150.png)](http://www.arduino.cc)
 
 Raspberry Pi is a trademark of the Raspberry Pi Foundation
+
 Arduino Community is a trademark of Arduino SA
 
 Licence
