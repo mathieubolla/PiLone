@@ -1,7 +1,7 @@
 PiLone
 ======
 
-PiLone is OpenSourceHardWare that allows quietly displaying various quantitative and/or time based data in the living room
+PiLone is Open Source HardWare that allows quietly displaying various quantitative and/or time based data in the living room
 
 BEWARE: This is currently a barely functionnal proto
 BEWARE BEWARE: The provided PCB hasn't been fabed currently. Do not mass order one, it may not even work...
