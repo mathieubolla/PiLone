@@ -23,6 +23,11 @@ What is it?
 
 In this project, you will find how to plug a Raspberry Pi, an Arduino Pro Mini, and some Adafruit NeoPixels together, to make a connected object that can display time based, or quantitative, information in a beautifull way.
 
+The two most important parts are:
+
+- Some software to gather data and push it to pixels
+- A custom PCB to hold the parts together
+
 Why?
 ====
 
