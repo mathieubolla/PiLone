@@ -68,6 +68,8 @@ Software parts
 - PySerial (install with `pip install pyserial`)
 - [optional] BottlePy (intall with `pip install bottle`) (will work without Bottle Py if you do not need test.py to play with LED colors - by hand)
 - UART console disabled, reconfigured as serial port
+- [optional] [Fritzing](http://fritzing.org/home/) to work on PCB design
+- [optional] [SketchUp](http://www.sketchup.com) to work on case design and see real world assembly
 
 TODO
 ====
@@ -78,4 +80,8 @@ Comming next are some instructions on how to assemble the thing (have a look at 
 
 Then, some more on how to run it
 
-Finally, something on the software architecture and what could be done with it really easily
+Then, something on the software architecture and what could be done with it really easily
+
+Finally, a better designed (completed design? 3d-printable, laser cut?) case to hold it
+
+![Case view](./hardware/case.png)
