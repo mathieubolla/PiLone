@@ -3,8 +3,10 @@ PiLone
 
 PiLone is OpenSourceHardWare that allows quietly displaying various quantitative and/or time based data in the living room
 
+![OpenSource HardWare logo](./oshw-logo-200-px.png)
+
 Licence
----
+=======
 
 All software in this repository is released under the GNU General Public Licence V3.0. You may find a copy online [there](http://opensource.org/licenses/GPL-3.0) or localy [here](./software-licence.txt)
 
