@@ -33,6 +33,9 @@ All documentation, drawings, pictures, schematics, and more generaly all that is
 What is it?
 ===========
 
+What's in here?
+---------------
+
 In this project, you will find how to plug a Raspberry Pi, an Arduino Pro Mini, and some Adafruit NeoPixels together, to make a connected object that can display time based, or quantitative, information in a beautifull way.
 
 The two most important parts are:
@@ -41,6 +44,29 @@ The two most important parts are:
 - A custom PCB to hold the parts together
 
 ![The custom PiLone PCB](./hardware/pcb.png)
+
+What can I build with it?
+-------------------------
+
+With those hardware designs and software, you may build a pretty connected object that displays various informations on LED strips, with all the ugly electronics parts encased in a PlexiGlass tube about 11cm diameter by 18cm height.
+
+What information it may display depends entierly on your imagination, and programming skills. But here are two samples, provided in the sample software:
+
+### Visual alarm clock
+
+You may want a visual reminder of something in time, like, the hour at which your eldest child should leave to school. PiLone will start lighting its LED one by one ten minutes before the expected time, and then blink for five minutes when you're late. Now, he can't be late anymore: The more light you see, the more motivated he will be.
+
+![Time to leave illustration](./docs/img/time_to_leave.gif)
+
+### Differential meteo
+
+You may also want to know if you need an umbrella or your super insulating coat. But what's the point in pulling your very smart phone to know it's 18°C outside? Is it cold? And do you have time to do so? You'd better visually know if today is colder than yesterday, and with less rain. Differential meteo just does that: Display one or two, red or blue, dots for temperature, one for slighly different, two for really different, red for hotter, blue for warmer. And three light blue dots for the rain. One for light, two for serious, three for the apocalypse. Now, you just know: Umbrella, no coat.
+
+![Differential meteo illustration](./docs/img/differential_meteo.gif)
+
+### Combine them
+
+Because your PiLone is made of sticks, three of them, you can choose which is better for the task. Lets say, meteo closer to the umbrella, and alarm clock from your kitchen table. So you see what you need where your need it. But there's more: Each stick is independent. That means, if you need the meteo while your son need alarm clock, just display both.
 
 Why?
 ====
