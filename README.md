@@ -104,8 +104,8 @@ Software parts
 - Linux installed on the SD-Card (any standard distribution will do, tested on Raspbian)
 - Python 2.7.x (most probably already installed)
 - PySerial (install with `pip install pyserial`)
-- [optional] BottlePy (intall with `pip install bottle`) (will work without Bottle Py if you do not need test.py to play with LED colors - by hand)
-- UART console disabled, reconfigured as serial port
+- [optional] BottlePy (intall with `pip install bottle`) (if you need test.py to play with LED colors by hand, to check your hardware is well built)
+- UART console disabled, reconfigured as serial port ([Tooling and manual there](https://github.com/lurch/rpi-serial-console))
 - [optional] [Fritzing](http://fritzing.org/home/) to work on PCB design
 - [optional] [SketchUp](http://www.sketchup.com) to work on case design and see real world assembly
 
