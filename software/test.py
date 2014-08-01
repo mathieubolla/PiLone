@@ -24,7 +24,7 @@ def set_one(line, led, color1, color2):
 def light_show(serial_line):
     count = 0
     while True:
-        for pilone in range(0, 2):
+        for pilone in range(0, 3):
             for led in range(0, 8):
                 serial_line.print_color(pilone, led, "FFFFFF", "FFFFFF")
                 time.sleep(0.1)
