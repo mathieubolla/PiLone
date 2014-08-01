@@ -4,13 +4,13 @@
 
 #include <Adafruit_NeoPixel.h>
 
-Adafruit_NeoPixel strips[] = {Adafruit_NeoPixel(8, 2, NEO_GRB + NEO_KHZ800), Adafruit_NeoPixel(8, 3, NEO_GRB + NEO_KHZ800)};
+Adafruit_NeoPixel strips[] = {Adafruit_NeoPixel(8, 2, NEO_GRB + NEO_KHZ800), Adafruit_NeoPixel(8, 3, NEO_GRB + NEO_KHZ800), Adafruit_NeoPixel(8, 4, NEO_GRB + NEO_KHZ800)};
 
 String inputString = "";
 boolean stringOk = false;
 boolean talking = true;
 int stepping = 0;
-unsigned int transitions[2][8][9];
+unsigned int transitions[3][8][9];
 unsigned long lastTime = millis();
 #define STEPS 63
 
@@ -25,6 +25,10 @@ void setup() {
   strips[1].begin();
   strips[1].setBrightness(255); // Half power
   strips[1].show(); // Initialize all pixels to 'off'
+  
+  strips[2].begin();
+  strips[2].setBrightness(255); // Half power
+  strips[2].show(); // Initialize all pixels to 'off'
 }
 
 void loop() {
@@ -72,7 +76,7 @@ void showData() {
 }
 
 void showDataAt(int k, int k2, int steps) {
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 3; i++) {
       for (int j = 0; j < 8; j++) {
         int red = transitions[i][j][k];
         int green = transitions[i][j][k+1];
