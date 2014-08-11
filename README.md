@@ -85,7 +85,7 @@ Hardware parts
 - 1x SD-Card (any size will do, as long as your Linux fits in. >4Gb recommended)
 - 1x SparkFun Arduino Pro Mini 5v 16MHz ([SparkFun](https://www.sparkfun.com/products/11113))
 - 3x Adafruit Technology High Density NeoPixel Sticks (or less, at least one) (or any other WS-2812 controlled 5050 RGB LED strip or - stick) ([SparkFun](https://www.sparkfun.com/products/12661))
-- 1x custom made PCB (you may have the one [here](./hardware/PiLone‰20rev‰20C.fzz) made at Fritzing Fab, for instance, or build it - yourself if you have time, patience, skills, and something to print, cut, drill small, two-sided PCBs)
+- 1x custom made PCB (you may have the one [here](./hardware/PiLone‰20rev‰20E%203v%20low%20spec.fzz) made at Fritzing Fab, for instance, or build it - yourself if you have time, patience, skills, and something to print, cut, drill small, two-sided PCBs)
 - 1x 2x13, 0.1' spaced, shrouded header ([SparkFun](https://www.sparkfun.com/products/11490)) or 2x13, 0.1' spaced, female header ([SparkFun](https://www.sparkfun.com/products/11765))
 - 1x USB cable type-A to micro type-B as short as possible (30cm will do) ([SparkFun](https://www.sparkfun.com/products/10215))
 - 1x FTDI-to-USB converter (SparkFun's works perfectly, any clone will do) ([SparkFun](https://www.sparkfun.com/products/9716) or get a friend to program your Arduino for you)
