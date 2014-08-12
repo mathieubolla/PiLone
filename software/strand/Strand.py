@@ -23,7 +23,7 @@ class Strand:
 
         i = 0
         while True:
-            i += 1;
+            i += 1
             if (we_say == arduino_said) | (i > 10):
                 break
 
