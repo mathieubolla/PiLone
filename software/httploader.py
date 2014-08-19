@@ -23,7 +23,7 @@ class Task():
         from_app = read_from_app(self)
 
         for line in from_app['data']:
-            strand.print_color(line['line'], line['led'], line['color1'], line['color2'])
+            strand.print_color(line['led'], line['color1'], line['color2'])
 
 class Planning():
     where = None
@@ -82,9 +82,8 @@ def main(args):
     planning = Planning('http://pilone/')
     tasks.put((planning.schedule(), planning))
 
-    for i in range(0, 1):
-        for j in range(0, 7):
-            strand.print_color(i, j, "000000", "000000")
+    for i in range(0, 7):
+        strand.print_color(i, "000000", "000000")
 
     while True:
         scheduled, task = tasks.get()

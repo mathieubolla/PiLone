@@ -16,19 +16,20 @@ import strand.Strand
 def index():
     return static_file('index.html', sys.path[0], mimetype='text/html')
 
-@route('/<line>/<led>/<color1>/<color2>')
-def set_one(line, led, color1, color2):
-    ser.print_color(line, led, color1, color2)
-    return {'line': line, 'led': led, 'color1': color1, 'color2': color2}
+@route('/<led>/<color1>/<color2>')
+def set_one(led, color1, color2):
+    ser.print_color(led, color1, color2)
+    return {'led': led, 'color1': color1, 'color2': color2}
 
 def light_show(serial_line):
     count = 0
     while True:
-        for pilone in range(0, 3):
-            for led in range(0, 8):
-                serial_line.print_color(pilone, led, "FFFFFF", "FFFFFF")
-                time.sleep(0.1)
-                serial_line.print_color(pilone, led, "000000", "000000")
+        for led in range(0, 24):
+            serial_line.print_color(led, "FFFFFF", "FFFFFF")
+            time.sleep(0.1)
+        for led in range(0, 24):
+            serial_line.print_color(led, "000000", "000000")
+            time.sleep(0.1)
         count += 1
         if count >= 2:
             break

@@ -14,8 +14,10 @@ class Strand:
             control_code ^= ord(color_spec[i])
         return control_code
 
-    def print_color(self, pilone, led, color1, color2):
-        color_spec = "{0}{1}{2}{3}\n".format(pilone, led, color1, color2)
+    def print_color(self, led, color1, color2):
+        color_spec = "{:02x}{:}{:}\n".format(led, color1, color2).upper()
+
+        print color_spec
 
         self.serial.write(color_spec)
         arduino_said = "0x" + self.serial.readline().strip()
